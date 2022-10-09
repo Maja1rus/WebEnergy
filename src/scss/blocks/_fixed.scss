@@ -1,0 +1,32 @@
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
+    animation-name: show-fixed;
+    animation-duration: 0.5s;
+}
+
+@keyframes show-fixed {
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.header-top__contaner.fixed {
+    padding-top: 20px;
+    width: calc(100% - 40px);
+}
+
+@media screen and(min-width: 1831px) {
+    .header-top__contaner.fixed {
+        left: 5%;
+    }
+}

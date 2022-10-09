@@ -1,0 +1,118 @@
+.case-phone {}
+
+.case-phone__wrap {}
+
+.case-phone__item {
+    display: grid;
+    gap: 30px;
+}
+
+.case-phone__title {
+}
+
+.case-phone__discrption {
+    margin: 0;
+}
+
+.case-phone__images {
+    position: relative;
+    height: 200px;
+    bottom: -80px;
+}
+
+.case-phone__img {
+    position: absolute;
+    height: auto;
+    width: 132px;
+}
+
+.case-phone__img--first {
+    bottom: -29px;
+}
+
+.case-phone__img--second {
+    bottom: -63px;
+    left: 138px;
+}
+
+@media screen and(min-width:425px) {
+    .case-phone__images {
+        height: 250px;
+    }
+
+    .case-phone__img {
+        width: 160px;
+    }
+
+    .case-phone__img--second {
+        left: 200px;
+    }
+}
+
+@media screen and(min-width:520px) {
+    .case-phone__images {
+        height: 330px;
+    }
+
+    .case-phone__img {
+        width: 200px;
+    }
+
+    .case-phone__img--second {
+        left: 220px;
+    }
+}
+
+@media screen and(min-width:768px) {
+    .case-phone__wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+
+    }
+
+    .case-phone__images {
+        top: 0;
+    }
+
+    .case-phone__img {
+        width: 160px;
+    }
+
+    .case-phone__img--first {
+        top: -63px;
+    }
+
+    .case-phone__img--second {
+        left: 172px;
+    }
+}
+
+@media screen and(min-width:1024px) {
+    .case-phone__wrap {
+        gap: 170px;
+    }
+
+    .case-phone__img {
+        width: 190px;
+    }
+
+    .case-phone__img--second {
+        left: 202px;
+    }
+}
+
+@media screen and(min-width:1260px) {
+    .case-phone__img {
+        width: 235px;
+    }
+
+    .case-phone__img--first {
+        top: -150px;
+    }
+
+    .case-phone__img--second {
+        left: 300px;
+        bottom: -150px;
+    }
+}

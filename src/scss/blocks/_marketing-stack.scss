@@ -1,0 +1,37 @@
+.marketing-stack {
+}
+
+.marketing-stack__wrap {
+    display: grid;
+    row-gap: 30px;
+}
+
+.marketing-stack__img {
+    display: flex;
+}
+
+.marketing-stack__subtitle {
+    font-size: 23px;
+}
+
+.marketing-stack__description {
+    margin: 0;
+}
+
+@media screen and (max-width:1024px) {
+    .marketing-stack__img {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .marketing-stack__wrap {
+        grid-template-columns: 1fr 2fr;
+        row-gap: 60px;
+        column-gap: 100px;
+
+        .marketing-stack__img {
+            grid-row: 1 /3;
+        }
+    }
+}

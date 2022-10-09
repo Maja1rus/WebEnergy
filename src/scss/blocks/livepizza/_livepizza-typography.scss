@@ -1,0 +1,42 @@
+
+.livepizza-typography {
+    color: var(--color-white);
+    background: #1F1F1F;
+    font-family: var(--font-open-sans);
+}
+
+.livepizza-color {
+    border-radius: 15px;
+}
+
+.livepizza-color__black {
+    box-shadow: 0px 0px 11.6511px rgba(217, 255, 19, 0.51);
+}
+
+.livepizza-color__green {
+    background-color: var(--color-green);
+}
+
+.livepizza-color__yellow {
+    background-color: #F9E324;
+}
+
+.livepizza-color__orange {
+    background-color: #FFAD24;
+}
+
+.livepizza-btn {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 9px 30px;
+    font-size: 10px;
+    background-color: var(--color-green);
+    box-shadow: 0px 0.623618px 6.23618px rgba(191, 214, 73, 0.44);
+    border-radius: 15px;
+    margin-bottom: 23px;
+
+    &--hover {
+        background-color: #F9E324;
+        box-shadow: 0px 1.02058px 10.2058px rgba(191, 214, 73, 0.44);
+    }
+}

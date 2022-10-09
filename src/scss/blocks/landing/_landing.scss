@@ -1,0 +1,25 @@
+.landing-text {
+    p {
+        margin: 0;
+        font-size: var(--size-normal);
+        font-weight: var(--font-medium);
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width:426px) {
+    .landing-text {
+        p {
+            font-size: var(--size-normal-big);
+        }
+    }
+}
+
+@media screen and (min-width:769px) {
+    .landing-text {
+        p {
+            font-size: 1.875rem;
+        }
+    }
+}

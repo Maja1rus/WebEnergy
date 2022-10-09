@@ -1,0 +1,112 @@
+.profit {
+  padding: 80px 0 ;
+  position: relative;
+  overflow: hidden;
+  h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    text-align: center;
+    max-width: 660px;
+    margin: 0 auto;
+  }
+  &__items {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  &__item {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #161616;
+    color: white; 
+    height: 464px;
+    max-width: 499px;
+    box-sizing: border-box;
+    gap: 24px;
+    border-radius: 8px;
+    li {
+      display: flex;
+      align-items: center;
+      &::before {
+        content: url('../../../img/seo/tick.png');
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    &:last-child {
+      background: var(--color-orange);
+      color: black;
+      li {
+        &::before {
+        content: url('../../../img/seo/tick-2.png');
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+      }
+      }
+    }
+  }
+  &__header {
+      margin: 0;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      max-width: 419px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .profit {
+    padding: 60px 0;
+    h2 {
+      font-size: 34px;
+      line-height: 42px;
+      text-align: left;
+    }
+    &__items {
+      justify-content: inherit;
+    }
+    &__item {
+      max-width: 100%;
+    }
+    &__items {
+      gap: 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .profit {
+    &__header {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__item {
+      padding: 20px;
+      ul {
+        gap: 8px;
+      }
+      li {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .profit {
+    &__header {
+      text-align: left;
+    }
+  }
+}

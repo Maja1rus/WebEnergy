@@ -1,0 +1,27 @@
+.case {
+
+}
+
+.case__wrap {
+    display: grid;
+    align-items: start;
+    gap: 50px;
+}
+
+.case__discription {
+    margin: 0;
+}
+
+@media screen and(min-width: 768px) {
+    .case__wrap {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+
+@media screen and(min-width:1024px) {
+    .case__title {
+        font-size: var (--size-subtitle-medium);
+    }
+}

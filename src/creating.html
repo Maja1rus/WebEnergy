@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"web energy"
+})
+
+<body>
+    @@include('html/header-creating.html', {})
+    <main class="creating">
+        <section class="section-padding-70 creating-text black">
+            <div class="container">
+                <p>
+                    Примерно 4 из 5 сайтов 
+                    <span class="text--focus">не приносят прибыли бизнесу.</span> Причиной тому исполнители, которые делают
+                    все по шаблону. Большинство разработчиков не учитывают 
+                    <span class="text--focus">специфику бизнеса,</span> и <span class="text--focus">70%</span> случаев разработчики даже не анализируют конкурентов.<span class="text--focus">ЭТО НЕ ПРО НАС!</span>
+                </p>
+            </div>
+        </section>
+        @@include('html/creating-dev.html', {})
+        @@include('html/stages-card.html', {})
+        @@include('html/customers.html', {})
+        @@include('html/price.html', {})
+        @@include('html/landing/landing-case.html')
+        @@include('html/contact.html', {})
+    </main>
+    @@include('html/footer.html', {})
+    @@include('html/popup-feedback.html')
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

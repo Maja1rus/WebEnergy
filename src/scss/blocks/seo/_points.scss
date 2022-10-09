@@ -1,0 +1,142 @@
+.points {
+  background: #161616;
+  padding: 80px 0;
+  color: white;
+  overflow: hidden;
+  p {
+    margin: 0;
+  }
+  h2 {
+    margin: 16px 0 80px;
+  }
+  h3 {
+    margin: 0;
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+  }
+  &__span {
+    color: var(--color-orange)
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 500px;
+    &:nth-child(2) {
+      margin: 288px 0 0 auto;
+    }
+    &:nth-child(3) {
+      margin: 288px 0 0 0;
+    }
+  }
+  &__img_1 {
+    position: absolute;
+    top: -86px;
+    right: -126%;
+  }
+  &__img_2 {
+    position: absolute;
+    left: -722px;
+    top: -72px;
+  }
+  &__img_3 {
+    position: absolute;
+    top: -132px;
+    right: -640px;
+
+  }
+  &__heading {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #E8E8E8;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .points {
+    &__img_1 {
+      right: -100%;
+    }
+    &__img_2 {
+      left: -550px;
+    }
+    &__img_3 {
+      right: -460px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .points {
+    padding: 60px 0;
+    h2 {
+      margin: 12px 0 40px;
+    }
+    &__title {
+      font-size: 34px;
+      line-height: 42px;
+    }
+    &__item {
+      align-items: center;
+      max-width: 100%;
+      &:nth-child(2) {
+        margin: 0;
+      }
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__heading {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    &__img_1 {
+      position: relative;
+      width: 264px;
+      top: 0;
+      right: 0;
+      height: 262px;
+    }
+    &__img_2 {
+      position: relative;
+      width: 264px;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 262px;
+      object-fit: contain;
+    }
+    &__img_3 {
+      position: relative;
+      width: 264px;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 262px;
+    }
+    .swiper-container {
+      height: 660px;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.cases {
+  padding-bottom: 150px;
+  background: linear-gradient(0deg, #161616, #161616), #161616;
+  &__title {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  &__img {
+    border-radius: 5px;
+  }
+  &__grid {
+    margin-top: 70px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+   &-mini {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+   }
+  }
+  &__btn {
+    border: 2px solid #FD6C03;
+   border-radius: 40px;
+   color: white;
+   padding: 19px 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   &:hover {
+    background: #FD6C03;
+   }
+   &::after {
+    content: url('../../../img/upakovka/icon-arrow.svg');
+    align-self: center;
+    margin-left: 10px;
+   }
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+    margin-top: 88px;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .cases {
+    padding-bottom: 60px;
+    &__title {
+      font-size: 35px;
+     line-height: 130%;
+    }
+    &__grid {
+      margin-top: 40px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      &-mini {
+        gap: 10px;
+      }
+    }
+  }
+}

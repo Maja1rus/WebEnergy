@@ -1,0 +1,137 @@
+.case-typography {
+    background-color: var(--color-white);
+}
+
+.case-typography__main {
+    padding-bottom: 60px;
+}
+
+.case-typography__card {
+    display: grid;
+    gap: 45px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.case-typography__wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.case-typography__title {
+    margin: 0;
+    padding-bottom: 34px;
+    font-size: 1.5rem;
+    font-weight: var(--font-bold);
+}
+
+.case-typography__img {
+    padding-bottom: 50px;
+}
+
+.case-typography__img img {
+    max-width: 192px;
+}
+
+.case-typography__font {
+    margin: 0;
+    padding-bottom: 35px;
+    font-size: var(--size-subtitle);
+    font-weight: var(--font-semi-bold);
+}
+
+.case-typography__weight {
+    display: flex;
+    justify-content: space-between;
+}
+
+.case-typography__bold {
+    font-weight: var(--font-bold);
+}
+
+.case-typography__semibold {
+    font-weight: var(--font-semi-bold);
+}
+
+.case-typography__medium {
+    font-weight: var(--font-medium);
+}
+
+.case-typography__regular {
+    font-weight: var(--font-regular);
+}
+
+.case-typography__colors {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.case-typography__color {
+    height: 45px;
+    width: 45px;
+}
+
+.case-typography__font-color {
+    color: #3B3B3C;
+}
+
+.case-typography__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.case-typography__state {
+    margin: 0;
+}
+
+@media screen and(min-width:425px) {
+
+    .case-typography__btns,
+    .case-typography__weight {
+        justify-content: center;
+        gap: 55px;
+    }
+
+    .case-typography__img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .case-typography__state {
+        text-align: center;
+    }
+}
+
+@media screen and(min-width:768px) {
+    .case-typography__card {
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .case-typography__btns,
+    .case-typography__weight,
+    .case-typography__img {
+        justify-content: flex-start;
+    }
+
+    .case-typography__state {
+        text-align: left;
+    }
+}
+
+@media screen and(min-width:1140px) { 
+    .case-typography__color {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media screen and(max-width:768px) {
+    .case-typography__main {
+        display: none;
+    }
+}

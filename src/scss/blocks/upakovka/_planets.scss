@@ -1,0 +1,119 @@
+.planets {
+  padding-top: 200px;
+  padding-bottom: 150px;
+  background: linear-gradient(0deg, #161616, #161616), #161616;
+  &__title {
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    margin: 0;
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: white;
+    margin-bottom: 31px;
+  }
+  &__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  &__margin {
+    margin-right: 180px;
+  }
+  &__item {
+    transform: rotate(-45deg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+  }
+  &__kvadro {
+    width: 162px;
+    height: 162px;
+    box-shadow: inset 0px 4.77893px 4.77893px rgba(255, 255, 255, 0.16), inset 0px 0px 38.2314px rgba(255, 255, 255, 0.08);
+    border-radius: 28px;
+    background: #171717;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #F2994A;
+    text-align: center;
+    transform: rotate(45deg);
+  }
+  &__img {
+    width: 136px;
+    height: 136px;
+  }
+
+}
+@media screen and (max-width: 1330px) {
+  .planets {
+    &__items {
+      justify-content: space-around;
+    }
+    &__item {
+      transform: rotate(0);
+    }  
+    &__text {
+      transform: rotate(0);
+    }
+    &__margin {
+      margin: 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .planets {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__items {
+      justify-content: inherit;
+      justify-items: center;
+    }
+    &__item {
+      column-gap: 0;
+      justify-items: center;
+      align-items: center;
+    }
+    &__kvadro {
+      width: 130px;
+      height: 130px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__img {
+      width: 105px;
+      height: 105px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      line-height: 18px;
+      margin: 0 0 12px 0;
+    }
+    &__title {
+      font-size: 34px;
+      line-height: 42px;
+    }
+    .swiper-container {
+      height: 700px;
+    }
+    .swiper-wrapper {
+      height: 90%;
+    }
+  }
+}

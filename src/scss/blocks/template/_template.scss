@@ -1,0 +1,18 @@
+.template{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__img {
+    margin-top: 80px;
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+  &__color {
+    background-color: #321011;
+    background-image: none;
+    -ms-flex-line-pack: normal;
+    align-content: normal;
+  }
+}

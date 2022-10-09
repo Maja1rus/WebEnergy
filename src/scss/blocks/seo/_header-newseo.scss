@@ -1,0 +1,31 @@
+.header__newseo {
+  background: url('../../../img/seo/main.png')
+}
+.header-newseo {
+  z-index: 1;
+  position: relative;
+
+  &_img {
+    position: absolute;
+    top: -68%;
+    right: -7%;
+    z-index: -1;
+  }
+  &_span {
+    color: var(--color-orange)
+  }
+}
+@media screen and (max-width: 900px) {
+  .header-newseo {
+    &_img {
+      top: 7%;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .header-newseo {
+    &_img {
+      top: 87%;
+    }
+  }
+}

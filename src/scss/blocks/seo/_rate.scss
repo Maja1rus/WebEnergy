@@ -1,0 +1,232 @@
+.rate {
+  padding: 80px 0;
+  background-color: #161616;
+  color: white;
+    h2 {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 64px;
+      max-width: 636px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+  &__items {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 40px 60px;
+    justify-items: center;
+  }
+  &__item {
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    border: 2px solid #6F6F6F;
+    border-radius: 24px;
+    background: #292929;
+    width: 500px;
+    justify-content: space-between;
+    h4 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0;
+      text-align: center;
+    }
+    &:nth-of-type(2) {
+      .rate__box {
+        &:last-of-type {
+          margin-left: 90px;
+        }
+      }
+    }
+    &:nth-of-type(3) {
+      .rate__box {
+        &:last-of-type {
+          margin-left: 90px;
+        }
+      }
+    }
+       &:nth-of-type(5) {
+      .rate__box {
+        &:last-of-type {
+          margin-left: 90px;
+        }
+      }
+    }
+       &:nth-of-type(6) {
+      .rate__box {
+        &:last-of-type {
+          margin-left: 90px;
+        }
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    left: -18%;
+    top: 18%;
+  }
+  &__choose {
+    margin-bottom: 0;
+  }
+  &__price {
+    align-self: end;
+    border: 2px solid #6F6F6F;
+    border-radius: 32px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #FD6C03;
+    padding: 8px 16px;
+    text-align: end;
+    margin: 0;
+  }
+  &__box {
+    margin-top: 13px;
+    &:last-of-type {
+      margin-left: 70px;
+      max-width: 270px;
+    }
+  }
+  &__enemy {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    &-text {
+      max-width: 225px;
+      margin: 0;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  &__btn {
+    cursor: pointer;
+    color: white;
+    background-color: var(--color-orange);
+    padding: 16px 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .rate {
+    .swiper {
+      height: 630px;
+    }
+    &__items {
+      margin-top: 100px;
+      gap: 0;
+    }
+    &__enemy-text {
+      max-width: 260px;
+    }
+    &__item {
+      padding: 24px;
+      align-items: inherit;
+      height: 100%;
+        h4 {
+          margin-top: 70px;
+        }
+        &:nth-of-type(2) {
+          .rate__box {
+            &:last-of-type {
+            margin-left: 0;
+            }
+           }
+        }
+        &:nth-of-type(3) {
+            .rate__box {
+              &:last-of-type {
+                margin-left: 0;
+              }
+            }
+        }
+         &:nth-of-type(5) {
+            .rate__box {
+              &:last-of-type {
+              margin-left: 0;
+            }
+           }
+         }
+        &:nth-of-type(6) {
+          .rate__box {
+            &:last-of-type {
+          margin-left: 0;
+        }
+      }
+    }
+    }
+    &__box {
+      margin-left: 0;
+      &:last-of-type {
+        margin-left: 0;
+      } 
+    }
+    &__img {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: -24%;
+      width: 200px;
+      height: 200px;
+    }
+    .swiper-wrapper {
+      height: 490px;
+    }
+    &__price {
+      align-self: center
+    }
+    &__choose {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .rate {
+    &__img {
+      top: -23%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .rate {
+    padding: 60px 0;
+    h2 {
+      font-size: 34px;
+      line-height: 42px;
+    }
+    &__items {
+      margin-top: 162px;
+    }
+    h4 {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__price {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__box {
+      margin-top: 0;
+    }
+    &__enemy {
+      font-size: 16px;
+      line-height: 24px;
+      &-text {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    .swiper {
+      height: 715px;
+    }
+  }
+}

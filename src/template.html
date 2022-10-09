@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"template"
+})
+<body>
+  @@include('html/template/header-template.html', {})
+  <main class="services">
+    @@include('html/template/template.html', {})
+    @@include('html/template/template-screen.html', {})
+    @@include('html/contact.html', {})
+  </main>
+  @@include('html/footer.html', {})
+  <script src="js/app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+.sharami-color {
+    border-radius: 50%;
+}
+
+.sharami-color__dark-pink {
+    background-color: #CE8884;
+}
+
+.sharami-color__pink {
+    background-color: #E4B5AF;
+}
+
+.sharami-color__black {
+    background-color: #282828;
+}
+
+.sharami-color__gray {
+    background-color: #636363;
+}
+
+.sharami-color__light {
+    background-color: #E0E0E0;
+}
+
+.sharami-typography__font {
+    text-transform: uppercase;
+    font-weight: var(--font-regular);
+    color: #3B3B3C;
+}
+
+.sharami-btn {
+    background-color: #CE8884;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 30px;
+    color: var(--color-white);
+    margin-bottom: 47px;
+
+    &--hover {
+        background-color: #E4B5AF;
+    }
+}
+
+@media screen and(min-width:1024px) {
+    .sharami-btn {
+        padding: 16px 68px;
+        font-size: 18px;
+    }
+}

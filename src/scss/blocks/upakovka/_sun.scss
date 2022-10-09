@@ -1,0 +1,224 @@
+.sun {
+  padding: 300px 0;
+  background: linear-gradient(0deg, #161616, #161616), #161616;
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+  &__box {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 16px 24px;
+    background: #FD6C03;
+    border-radius: 32px;
+    position: absolute;
+    margin: 0;
+    left: -100%;
+    top: 45%;
+    &-1 {
+        transform: translateY(5px) translateX(-92px) rotate(360deg);
+    }
+    &-2 {
+        transform: translateY(-106px) translateX(105px) rotate(383deg);
+    }
+    &-3 {
+       transform: translateY(-344px) translateX(163px) rotate(420deg);
+    }
+    &-4 {
+       transform: translateY(-399px) translateX(316px) rotate(450deg);
+    }
+    &-5 {
+        transform: translateY(-205px) translateX(161px) rotate(397deg);
+    }
+    &-6 {
+      transform: translateY(-406px) translateX(462px) rotate(290deg);
+    }
+    &-7 {
+      transform: translateY(-257px) translateX(618px) rotate(310deg);
+    }
+    &-8 {
+      transform: translateY(-111px) translateX(695px) rotate(336deg);
+    }
+    &-9 {
+      transform: translateY(-11px) translateX(708px) rotate(360deg);
+    }
+    &-10 {
+      transform: translateY(87px) translateX(677px) rotate(386deg);
+    }
+    &-11 {
+      transform: translateY(184px) translateX(601px) rotate(404deg);
+    }
+    &-12 {
+      transform: translateY(262px) translateX(505px) rotate(412deg);
+    }
+    &-13 {
+      transform: translateY(330px) translateX(317px) rotate(453deg);
+    }
+    &-14 {
+      transform: translateY(210px) translateX(271px) rotate(311deg);
+    }
+    &-15 {
+      transform: translateY(165px) translateX(43px) rotate(328deg);
+    }
+  }
+}
+@media screen and (max-width: 1150px) {
+  .sun {
+    &__item {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 12px;
+      &-1 {
+     transform: translateY(5px) translateX(80px) rotate(360deg);
+    }
+    &-2 {
+    transform: translateY(-78px) translateX(214px) rotate(379deg);
+    }
+    &-3 {
+transform: translateY(-239px) translateX(250px) rotate(415deg);
+    }
+    &-4 {
+transform: translateY(-294px) translateX(353px) rotate(447deg);
+    }
+    &-5 {
+    transform: translateY(-144px) translateX(259px) rotate(397deg);
+    }
+    &-6 {
+      transform: translateY(-297px) translateX(456px) rotate(290deg);
+    }
+    &-7 {
+      transform: translateY(-192px) translateX(579px) rotate(310deg);
+    }
+    &-8 {
+      transform: translateY(-83px) translateX(631px) rotate(336deg);
+    }
+    &-9 {
+      transform: translateY(-8px) translateX(620px) rotate(360deg);
+    }
+    &-10 {
+      transform: translateY(68px) translateX(599px) rotate(386deg);
+    }
+    &-11 {
+      transform: translateY(136px) translateX(552px) rotate(398deg);
+    }
+    &-12 {
+      transform: translateY(210px) translateX(468px) rotate(427deg);
+    }
+    &-13 {
+      transform: translateY(245px) translateX(332px) rotate(453deg);
+    }
+    &-14 {
+      transform: translateY(159px) translateX(298px) rotate(311deg);
+    }
+    &-15 {
+      transform: translateY(121px) translateX(160px) rotate(328deg);
+     }
+    }
+    &__img {
+      width: 80%;
+      height: 80%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .sun {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    &__box {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: inherit;
+    }
+    &__wrap {
+      width: 100%;
+      height: inherit;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: flex-start;
+    }
+    &__img {
+      margin-top: 80px;
+      order: 16;
+      width: 280px;
+      height: 280px;
+    }
+    &__item {
+      position: relative;
+      white-space: nowrap;
+      top: 0;
+      right: 0;
+      left: 0;
+    &-1 {
+     transform: none;
+     order: 10;
+    }
+    &-2 {
+     transform: none;
+     order: 8
+    }
+    &-3 {
+     transform: none;
+     order: 7
+    }
+    &-4 {
+     transform: none;
+      order: 4;
+    }
+    &-5 {
+     transform: none;
+     order: 6;
+    }
+    &-6 {
+     transform: none;
+     order: 3;
+    }
+    &-7 {
+     transform: none;
+     order: 9;
+    }
+    &-8 {
+     transform: none;
+     order: 5
+    }
+    &-9 {
+     transform: none;
+     order: 15;
+    }
+    &-10 {
+     transform: none;
+      order: 2
+    }
+    &-11 {
+     transform: none;
+     order:12;
+    }
+    &-12 {
+     transform: none;
+     order: 11;
+    }
+    &-13 {
+     transform: none;
+     order: 1;
+    }
+    &-14 {
+     transform: none;
+     order: 14;
+    }
+    &-15 {
+     transform: none;
+     order: 13;
+     }
+    }
+  }
+}

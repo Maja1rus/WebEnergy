@@ -1,0 +1,151 @@
+.header {
+    background-image: url('../img/headers/header-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--color-white);
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.header__bottom {
+    align-self: start;
+    margin-top: -104px;
+    position: relative;
+}
+
+.header__subtitle {
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.header__title {
+    max-width: 900px;
+    font-size: var(--size-biggest);
+    font-weight: var(--font-bold);
+    margin: 0;
+    padding-bottom: 7%;
+}
+
+.header__wrap {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
+    column-gap: 160px;
+}
+
+.header__item {
+    display: grid;
+    row-gap: 30px;
+}
+
+.header__link {
+    font-size: var(--size-subtitle-small);
+    text-decoration: underline;
+    font-weight: var(--font-semi-bold);
+    color: var(--color-orange);
+    white-space: nowrap;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        color: var(--color-white);
+    }
+}
+
+.header__description {
+    margin: 0;
+
+    &--bold {
+        font-weight: var(--font-bold);
+    }
+}
+
+@media screen and(max-width: 1024px) {
+
+    .header__title {
+        padding-bottom: 5%;
+    }
+
+    .header__wrap {
+        column-gap: 50px;
+    }
+
+    .header__link {
+        font-size: var(--size-normal-big);
+    }
+}
+
+
+@media screen and(max-width:768px) {
+
+    .header__title {
+        padding-bottom: 5%;
+    }
+
+    .header__wrap {
+        grid-template-columns: 1fr;
+        row-gap: 2em;
+    }
+
+    .header__item {
+        row-gap: 1em;
+
+        &:nth-child(1) {
+            grid-row: 2;
+        }
+
+        &:nth-child(2) {
+            grid-row: 1;
+        }
+    }
+}
+
+@media screen and(max-width:425px) {
+    .header__bottom {
+        bottom: -13%;
+    }
+
+    .header__description,
+    .header__subtitle {
+        font-size: var(--size-small);
+    }
+}
+
+
+// медиа запрос для разрешений по вертикали
+
+@media screen and(max-height: 460px) {
+
+    .header__bottom {
+        // bottom: -7%;
+    }
+
+    .header__title {
+        padding-bottom: 4%;
+    }    
+}
+
+
+@media screen and(max-height: 375px) {
+    .header__bottom {
+        bottom: -5%;
+    }
+
+    .header__subtitle {
+        font-size: var(--size-small);
+    }
+
+    .header__title {
+        font-size: var(--size-subtitle);
+    }
+}
+
+@media screen and(max-height: 360px) {
+
+    .header__wrap {
+        row-gap: 1em;
+    }
+}

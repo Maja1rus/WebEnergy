@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"Сами с шарами"
+})
+
+<body>
+    @@include('html/header-sharami.html', {})
+    <main class="services">
+        @@include('html/sharami/sharami.html', {})
+        @@include('html/sharami/sharami-stats.html', {})
+        @@include('html/sharami/sharami-phone.html', {})
+        @@include('html/sharami/sharami-typograph.html', {})
+        @@include('html/sharami/sharami-more.html', {})
+        @@include('html/sharami/sharami-result.html', {})
+        @@include('html/contact.html', {})
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

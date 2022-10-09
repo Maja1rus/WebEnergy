@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"web energy"
+})
+
+<body>
+    @@include('html/landing/header-landing.html', {})
+    <main>
+        <section class="section-padding-70 container landing-text black">
+            <p>
+                Не просто <span class="text--focus">САЙТ</span>, а продающий <span class="text--focus">МАРКЕТИНГ</span> <br>
+                Подбираем эффективные <span class="text--focus">ИНСТРУМЕНТЫ DIGITAL МАРКЕТИНГА.</span> <br>
+                <span class="text--focus">завалим заявками,</span> будьте готовы!
+            </p>
+        </section>
+        @@include('html/landing/landing-digital.html')
+        @@include('html/landing/digital-text.html', {})
+        <section class="section-padding-70 container landing-text black">
+            <p>
+               Вы - <span class="text--focus">владелец бизнеса</span> и горите своим делом? Имеете <span
+                   class="text--focus">какую-то прибыль,</span>
+               но не знаете как <span class="text--focus">развиваться</span> дальше?
+               Не понимаете в какие инструменты <span class="text--focus">маркетинга</span> вкладывать и как это <span class="text--focus">контролировать?</span>
+            </p>
+        </section>
+        @@include('html/landing/landing-mount.html')
+        @@include('html/landing/landing-case.html')
+        @@include('html/landing/landing-tabs.html')
+        @@include('html/contact.html', {})
+        @@include('html/map.html', {})
+        @@include('html/feedback.html', {})
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
